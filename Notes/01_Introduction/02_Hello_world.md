@@ -58,7 +58,7 @@ interact with the interpreter.
 Let's take a closer look at the elements of the REPL:
 
 - `>>>` is the interpreter prompt for starting a new statement.
-- `...` is the interpreter prompt for continuing a statements. Enter a blank line to finish typing and run the statements.
+- `...` is the interpreter prompt for continuing a statement. Enter a blank line to finish typing and run what you've entered.
 
 The `...` prompt may or may not be shown depending on your environment. For this course,
 it is shown as blanks to make it easier to cut/paste code samples.
@@ -152,7 +152,10 @@ bash % python3 sears.py
 6 32 0.00352
 ...
 21 1048576 115.34336
-22 2097152 230.68672 Number of days 23 Number of bills 4194304 Final height 461.37344
+22 2097152 230.68672
+Number of days 23 
+Number of bills 4194304 
+Final height 461.37344
 ```
 
 Using this program as a guide, you can learn a number of important core concepts about Python.
@@ -238,7 +241,7 @@ while num_bills * bill_thickness < sears_height:
     day = day + 1
     num_bills = num_bills * 2
 
-print('Number of days', days)
+print('Number of days', day)
 ```
 
 The statements indented below the `while` will execute as long as the expression after the `while` is `true`.
@@ -254,7 +257,7 @@ while num_bills * bill_thickness < sears_height:
     day = day + 1
     num_bills = num_bills * 2
 
-print('Number of days', days)
+print('Number of days', day)
 ```
 
 Indentation groups the following statements together as the operations that repeat:
